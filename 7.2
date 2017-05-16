@@ -1,0 +1,37 @@
+1.Why Map reduce program is needed in Pig Programming? 
+Ans:Because Pig queries are converted to Map and Reduce jobs  ultimately.
+
+2.What are advantages of pig over MapReduce?
+Ans- 
+a) Pig Latin provides all of the  data processing operations, such as join, filter, group by, order by, union, etc. 
+   which is not in Map reduce.
+b) Forwriting map reduce the programmer must have prior java knowledge, in Pig its not so.
+c)Pig Latin joins and ordering codes comprise of 8-9 lines of code and take few minutes 
+  to write and debug. The same code in MapReduce will span hundred lines of code and 
+  takes hours to develop.
+
+3.What is pig engine and what is its importance?
+Ans:It acts as a interpretor between pig latin script and mapreduce jobs.It creates a environment for executing pig scripts into series of map reudce jobs parallel.
+
+4.What are the modes of Pig execution?
+Ans:We run Pig in two modes:
+a)
+MapReduce/Hadoop Mode: Here Pig jobs run as a series of MapReduce jobs picking the input and output paths from HDFS.
+pig -x mapreduce
+
+b) Local Mode: Here the entire Pig job runs as a single JVM picking the local Unix path for execution.
+pig -x local
+
+5.What is grunt shell in Pig?
+Ans:Its an nteractive Shell for executing Pig Commands.Its used when the pig file is not provided.
+
+6.What are the features of Pig Latin language?
+ANs:Pig Latin is a command based scripting language and designed specifically for data  transformation and flow. 
+    Pig Latin queries are converted to Map and Reduce jobs and hence they take advantage of parallel processing.
+    It uses simple syntax and inbuilt features/operators to reduce development effort and lines of codes involved.  
+
+7Is Pig latin commands case sensitive?
+Ans:Its not case sensitive.
+
+8.What is a data flow language?
+Ans:To access external data, every language must have or follow some rules.The instructions are flowing throw data by executing  diffferent control statement but data is not moved.Data flow language can get a stream of data which keeps moving from on instruction to another to be processed.
